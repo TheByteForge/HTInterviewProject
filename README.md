@@ -2,9 +2,9 @@
 
 # Hotel Tonight : Main Hotel Page Re-Creation
 
-[![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts 'JavaScript The Good Parts')
-[![Node version](https://img.shields.io/node/v/[NPM-MODULE-NAME].svg?style=flat)](http://nodejs.org/download/)
-[![Build Status](https://img.shields.io/appveyor/ci/:user/:repo.svg)](https://travis-ci.org/{TheByteForge}/{HotelTonightProject})
+[![Code Lint Style](https://img.shields.io/badge/Linting-AirBnB-BrightGreen.svg)](https://travis-ci.org/{TheByteForge}/{HotelTonightProject})
+[![Node version](https://img.shields.io/badge/NodeJS-v8.11.1-BrightGreen.svg)](http://nodejs.org/download/)
+[![Build Status](https://img.shields.io/badge/Build-Passing-BrightGreen.svg)](https://travis-ci.org/{TheByteForge}/{HotelTonightProject})
 [![Dependencies](https://img.shields.io/badge/Dependencies-Passing-BrightGreen.svg)](https://travis-ci.org/{TheByteForge}/{HotelTonightProject})
 
 **Hotel Tonight : Main Hotel Page Re-Creation** is a **Coding Proficiency Demo for Hotel Tonight**
@@ -24,7 +24,7 @@ This demo utilizes **react-boilerplate** (https://www.reactboilerplate.com/) tec
 
 **Planned Updates:**
 
-- None, Hire me and We'll Talk About It ;)
+- None, hire me and we'll talk about it ;)
 
 **Exisiting Features:**
 
@@ -51,7 +51,7 @@ If you would like to contribute to or run the Hotel Tonight Project clone or dow
 
 1. `Make sure that you have Node.js v8.10 and npm v5 or above installed.`
 
-2. `git clone "https://github.com/dTheByteForge/HotelTonightProject"`
+2. `git clone "https://github.com/TheByteForge/HotelTonightProject"`
 
 3. `cd HotelTonightProject`
 
@@ -91,7 +91,7 @@ For more information on using webpack, please visit: https://webpack.js.org/
 
 ## Author
 
-- **Zack Watkins** - _Designer & Developer_ - @github/TheByteForge - [Event Hero : Social Integrated Event Venue WebApp Template](https://github.com/TheByteForge)
+- **Zack Watkins** - _Designer & Developer_ - @github/TheByteForge - [Hotel Tonight Project](https://github.com/TheByteForge)
 
 ## License
 
