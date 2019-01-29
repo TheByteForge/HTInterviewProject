@@ -4,6 +4,7 @@ export default {
   // fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   space: [0, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
+    primary: 'Gotham, HelveticaNeue, Helvetica Neue, Roboto, Arial, sans-serif',
     sans: 'system-ui, sans-serif',
     mono: 'Menlo, monospace',
   },
@@ -12,16 +13,16 @@ export default {
     large: '0 0 24px rgba(0, 0, 0, .125)',
   },
   colors: {
-    primary: 'royalblue',
-    secondary: 'teal',
-    text: 'white',
+    primary: '#000',
+    secondary: '#454E5F',
+    text: '#fff',
   },
   fontSize: {
-    xl: '10rem',
-    lg: '1.8rem',
-    md: '1.3rem',
-    sm: '1rem',
-    xs: '0.75rem',
+    xl: '3rem',
+    lg: '2rem',
+    md: '1.75rem',
+    sm: '1.5rem',
+    xs: '1.25rem',
   },
   fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
   letterSpacings: {
@@ -42,7 +43,7 @@ export default {
   buttons: {
     primary: {
       color: '#fff',
-      backgroundColor: 'grey',
+      backgroundColor: '#000',
       padding: '1rem',
     },
     outline: {

@@ -7,6 +7,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
+import messages from './messages';
 
 const StyledTitle = styled.h1`
   color: ${props => {
@@ -31,8 +32,8 @@ const StyledTitle = styled.h1`
 
 function Title() {
   return (
-    <StyledTitle primary lg>
-      <FormattedMessage />
+    <StyledTitle>
+      <FormattedMessage {...messages.topdeals} />
     </StyledTitle>
   );
 }

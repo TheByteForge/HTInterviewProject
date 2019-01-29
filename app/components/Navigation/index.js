@@ -5,34 +5,41 @@
  */
 
 import React from 'react';
-import { Flex } from 'rebass';
+import { Flex, Box } from 'rebass';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
+// Components
 import Button from '../Button';
+import Logo from '../Logo';
 
 const NavigationBar = styled.div`
-  height: 10vh;
+  height: 15vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background: darkgrey;
-  position: fixed;
-  top: 0;
-  left: 0;
+  background: ${props => props.theme.colors.primary};
+  padding: ${props => props.theme.space};
+  border-bottom: #454e5f ${props => props.theme.borders[1]};
 `;
 
 function Navigation() {
   return (
-    <Flex>
-      <NavigationBar>
-        <Button label="Home" link="/" prefetch />
-        <Button label="About" link="/about" prefetch />
-        <Button label="Style Guide" link="/styleguide" prefetch />
-        <Button label="Contact" link="/contact" prefetch />
-      </NavigationBar>
-    </Flex>
+    <div>
+      <Flex>
+        <NavigationBar>
+          <Box width={2 / 12}>
+            <Logo alt="Hotel Tonight" />
+          </Box>
+          <Box width={6 / 12} />
+          <Box width={2 / 12}>
+            <Button label="SignUp | Sign In" link="/about" prefetch />
+          </Box>
+        </NavigationBar>
+      </Flex>
+    </div>
   );
 }
 

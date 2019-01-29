@@ -11,6 +11,6 @@ export const scope = 'app.containers.About';
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'This is the About container!',
+    defaultMessage: 'This is the Sign Up / Sign In container!',
   },
 });

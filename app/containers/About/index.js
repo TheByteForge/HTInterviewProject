@@ -64,8 +64,11 @@ export class About extends React.PureComponent {
       <AboutPageElm>
         <PageContainer>
           <Helmet>
-            <title>About</title>
-            <meta name="description" content="Description of About" />
+            <title>SignUp | Sign In</title>
+            <meta
+              name="description"
+              content="Description of Sign Up / Sign In Page"
+            />
           </Helmet>
           <Navigation />
           <FormattedMessage {...messages.header} />

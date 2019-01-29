@@ -10,11 +10,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: ${props => props.theme.fonts.primary};
+    text-rendering: optimizeLegibility;
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: ${props => props.theme.fonts.primary};
   }
 
   #app {
@@ -23,9 +24,14 @@ const GlobalStyle = createGlobalStyle`
     min-width: 100%;
   }
 
+  a{
+    text-decoration: none;
+  }
+  
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    ${props => props.theme.fonts.primary};
+    font-weight: 400;
     line-height: 1.5em;
   }
 `;

@@ -13,16 +13,4 @@ export default defineMessages({
     id: `${scope}.home`,
     defaultMessage: 'Home',
   },
-  about: {
-    id: `${scope}.about`,
-    defaultMessage: 'About',
-  },
-  styleguide: {
-    id: `${scope}.styleguide`,
-    defaultMessage: 'StyleGuide',
-  },
-  contact: {
-    id: `${scope}.contact`,
-    defaultMessage: 'Contact',
-  },
 });

@@ -12,7 +12,11 @@ const PrimaryButton = styled.button`
   display: 'inline-block';
   margin: 0;
   background: ${props => props.theme.buttons.primary.backgroundColor};
+  color: ${props => props.theme.colors.text};
   padding: ${props => props.theme.buttons.primary.padding};
+  &:focus {
+    outline: 0;
+  }
 `;
 
 export default PrimaryButton;
