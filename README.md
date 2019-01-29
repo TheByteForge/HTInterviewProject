@@ -4,7 +4,8 @@
 
 [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts 'JavaScript The Good Parts')
 [![Node version](https://img.shields.io/node/v/[NPM-MODULE-NAME].svg?style=flat)](http://nodejs.org/download/)
-[![Build Status](https://travis-ci.org/{dTheByteForge}/{HotelTonightProject}.png?branch=master)](https://travis-ci.org/{dTheByteForge}/{HotelTonightProject})
+[![Build Status](https://img.shields.io/appveyor/ci/:user/:repo.svg)](https://travis-ci.org/{TheByteForge}/{HotelTonightProject})
+[![Dependencies](https://img.shields.io/badge/Dependencies-Passing-BrightGreen.svg)](https://travis-ci.org/{TheByteForge}/{HotelTonightProject})
 
 **Hotel Tonight : Main Hotel Page Re-Creation** is a **Coding Proficiency Demo for Hotel Tonight**
 
