@@ -4,6 +4,10 @@ import PropTypes from 'prop-types';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
+AnyReactComponent.propTypes = {
+  text: PropTypes.string,
+};
+
 class GoogleMaps extends React.PureComponent {
   static defaultProps = {
     center: {
