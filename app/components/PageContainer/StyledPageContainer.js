@@ -17,7 +17,7 @@ const PageContainer = styled.div`
   ${media.lg`font-size:.85rem; `}
   ${media.md`font-size:.65rem; `}
   ${media.sm`font-size:.45rem; `}
-  ${media.xs`font-size:.25rem; `}
+  ${media.xs`font-size:.35rem; `}
 `;
 
 export default PageContainer;

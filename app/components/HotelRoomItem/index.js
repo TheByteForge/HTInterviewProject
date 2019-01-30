@@ -3,133 +3,27 @@
  * HotelRoomItem
  *
  */
-
-import React from 'react';
 // import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
+import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Flex, Box } from 'rebass';
 import messages from './messages';
 
+// Components
 import hotel1 from '../../images/Hotel-Rooms/hotel-bartlett.jpg';
-
 import Img from '../Img';
 
-const StyledRoomItem = styled.div`
-  background-color: ${props => props.theme.colors.tertiary};
-  width: 100%;
-  height: 100%;
-  min-height: 25vh;
-  transition: background-color 0.25s ease;
-
-  img {
-    background-color: ${props => props.theme.colors.tertiary};
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    position: relative;
-    top: -1.65rem;
-    left: 0;
-  }
-
-  &:hover {
-    background-color: #43444f;
-    transition: background-color 0.25s ease;
-  }
-`;
-
-// const StyledImg = styled.img`
-//   background-color: ${props => props.theme.colors.tertiary};
-//   width: 100%;
-//   height: auto;
-//   background-size: cover;
-// `;
-
-const TextOverlay = styled.h5`
-  background-color: rgba(0, 0, 0, 0.4);
-  color: ${props => props.theme.colors.overlay};
-  font-weight: ${props => props.theme.fontWeights[1]};
-  border: rgb(256, 256, 256, 0.1) ${props => props.theme.borders[1]};
-  position: relative;
-  top: 10px;
-  left: 10px;
-  padding: 4px 8px;
-  display: inline-block;
-  margin: 0;
-  z-index: 1;
-`;
-
-const BasicTag = styled.div`
-  background-color: ${props => props.theme.tags.basic};
-  text-transform: uppercase;
-  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 3px 0px;
-  font-size: 0.65rem;
-  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-  margin: 0.75rem;
-  white-space: nowrap;
-`;
-
-const SameDayTag = styled.div`
-  background-color: ${props => props.theme.tags.samedaydeal};
-  text-transform: uppercase;
-  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 3px 0px;
-  font-size: 0.65rem;
-  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-  margin: 0.75rem;
-  white-space: nowrap;
-`;
-
-const Price = styled.h1`
-  text-align: right;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 0.875em;
-  white-space: nowrap;
-  color: ${props => props.theme.colors.price};
-  font-weight: ${props => props.theme.fontWeights[4]};
-`;
-
-const DiscountedPrice = styled.h1`
-  text-align: right;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 1.813rem;
-  white-space: nowrap;
-  color: ${props => props.theme.tags.samedaydeal};
-`;
-
-const LikeBox = styled.div`
-  color: ${props => props.theme.colors.price};
-  font-weight: ${props => props.theme.fontWeights[1]};
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: -1rem;
-`;
-
-const Distance = styled.h5`
-  color: ${props => props.theme.colors.price};
-  font-weight: ${props => props.theme.fontWeights[1]};
-  white-space: nowrap;
-`;
-
-const HotelTitle = styled.h1`
-  margin: 0rem;
-  font-size: 1.5rem;
-  color: ${props => props.theme.colors.text};
-  font-weight: ${props => props.theme.fontWeights[5]};
-  overflow: hidden;
-  @media only screen and (max-width: 460px) {
-    font-size: 1rem;
-  }
-`;
-
-const Percentage = styled.h5`
-  font-size: 0.875em;
-  font-weight: ${props => props.theme.fontWeights[1]};
-  overflow: hidden;
-`;
+// Component Styles
+import StyledRoomItem from './StyledRoomItem';
+import TextOverlay from './TextOverlay';
+import BasicTag from './BasicTag';
+import SameDayTag from './SameDayTag';
+import Price from './Price';
+import DiscountedPrice from './DiscountedPrice';
+import LikeBox from './LikeBox';
+import Distance from './Distance';
+import HotelTitle from './HotelTitle';
+import Percentage from './Percentage';
 
 /* eslint-disable react/prefer-stateless-function */
 class HotelRoomItem extends React.Component {

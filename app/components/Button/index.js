@@ -1,6 +1,11 @@
 /**
  *
  * Button
+ * ------------------------------------------------------------------------------------------------
+ * A button with default styling to be applied site-wide for things such as nav (why the button
+ * is currently pre-fetched) links, etc. In a case where I have more time I would typically have a
+ * base button style such as this and then extend it or adapt it based on props to fit the needs of
+ * other buttons across the site.
  *
  */
 

@@ -1,38 +1,40 @@
 /**
  *
  * RoomCta
+ * ----------------------------------------
+ * A call to action section for listing locations at the bottom of
+ * scrollable hotel list. In interest of time I just made two seperate mapped lists
+ * however, there is probably a better way where only one list would be needed.
  *
  */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { Flex, Box } from 'rebass';
-import styled from 'styled-components';
-
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
-const ListTitle = styled.h1`
-  font-size: 1.5rem;
-  color: ${props => props.theme.colors.text};
-  font-weight: ${props => props.theme.fontWeights[5]};
-  overflow: hidden;
-`;
+// Styled Components
+import ListTitle from './ListTitle';
+import List from './List';
 
-const List = styled.ul`
-  color: ${props => props.theme.colors.price};
-  font-weight: ${props => props.theme.fontWeights[1]};
-  font-size: 0.75rem;
-  overflow: hidden;
-  list-style: none;
-  line-height: ${props => props.theme.lineHeights.normal};
+const locations = [
+  <FormattedMessage {...messages.location1} />,
+  <FormattedMessage {...messages.location2} />,
+  <FormattedMessage {...messages.location3} />,
+  <FormattedMessage {...messages.location4} />,
+  <FormattedMessage {...messages.location5} />,
+];
 
-  li {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`;
+const locations2 = [
+  <FormattedMessage {...messages.location6} />,
+  <FormattedMessage {...messages.location7} />,
+  <FormattedMessage {...messages.location8} />,
+  <FormattedMessage {...messages.location9} />,
+  <FormattedMessage {...messages.location10} />,
+];
+
+const locationListCol1 = locations.map(location => <li>{location}</li>);
+const locationListCol2 = locations2.map(location => <li>{location}</li>);
 
 function RoomCta() {
   return (
@@ -40,42 +42,10 @@ function RoomCta() {
       <ListTitle>More Amazing Deals In:</ListTitle>
       <Flex flexDirection="row">
         <Box>
-          <List>
-            <li>
-              <FormattedMessage {...messages.location1} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location2} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location3} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location4} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location5} />
-            </li>
-          </List>
+          <List>{locationListCol1}</List>
         </Box>
         <Box pl={5}>
-          <List>
-            <li>
-              <FormattedMessage {...messages.location6} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location7} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location8} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location9} />
-            </li>
-            <li>
-              <FormattedMessage {...messages.location10} />
-            </li>
-          </List>
+          <List>{locationListCol2}</List>
         </Box>
       </Flex>
     </div>

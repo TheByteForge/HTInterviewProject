@@ -3,6 +3,8 @@
  * Image.js
  *
  * Renders an image, enforcing the usage of the alt tag
+ * Source Set guarentees proper images are displayed for each screen size,
+ * allowing for faster rendering and displaying of correct photo pixel density for each screen size.
  */
 
 import React from 'react';

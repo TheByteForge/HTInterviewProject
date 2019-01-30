@@ -1,18 +1,15 @@
 /**
  *
  * Logo
+ * ------------------------------------------------------------------------
+ * Usually an extended style variant of Img component,
+ * however since HT had an svg already I used that for better scaleability.
  *
  */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import LogoImage from './LogoImage';
 // import HotelTonightLogo from '../../images/Logo/HT-White-Transparent.png';
-
-const LogoImage = styled.svg`
-  width: ${props => props.width || '10rem'};
-  height: ${props => props.height || 'auto'};
-`;
 
 function Logo() {
   return (

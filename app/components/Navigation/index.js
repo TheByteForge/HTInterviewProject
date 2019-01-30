@@ -1,31 +1,22 @@
 /**
  *
  * Navigation
+ * ------------------------------------------------
+ * A navigation system using react-router.
+ * Typically more time would be invested into making this
+ * component handle routing for the website's container "pages".
  *
  */
 
 import React from 'react';
 import { Flex, Box } from 'rebass';
-// import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 // Components
 import Button from '../Button';
 import Logo from '../Logo';
 
-const NavigationBar = styled.div`
-  height: 9.174311926605505vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: ${props => props.theme.colors.primary};
-  padding: ${props => props.theme.space};
-  border-bottom: #454e5f ${props => props.theme.borders[1]};
-  font-weight: ${props => props.theme.fontWeights[1]};
-  white-space: nowrap;
-`;
+// StyledComponents
+import NavigationBar from './NavigationBar';
 
 function Navigation() {
   return (

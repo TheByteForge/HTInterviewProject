@@ -9,11 +9,11 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-// import { Box, Card, Heading, Text } from 'rebass';
-// import Anime from 'react-anime';
 import styled from 'styled-components';
 import { Flex, Box } from 'rebass';
+// import { Box, Card, Heading, Text } from 'rebass';
 
+// An image placeholder for google map
 import tempMap from '../../images/Maps/google-maps-placeholder.png';
 
 //  Components
@@ -47,40 +47,6 @@ const MapContainer = styled.div`
 
 // import ResponsiveImage from '../../components/Img';
 
-// const slideInLeft = keyframes`
-//   from {
-//     -webkit-transform: translate3d(-100%, 0, 0);
-//     transform: translate3d(-100%, 0, 0);
-//     visibility: visible;
-//   }
-
-//   to {
-//     -webkit-transform: translate3d(0, 0, 0);
-//     transform: translate3d(0, 0, 0);
-//   }
-// `;
-// const slideOutLeft = keyframes`
-//   from {
-//     -webkit-transform: translate3d(0, 0, 0);
-//     transform: translate3d(0, 0, 0);
-//   }
-
-//   to {
-//     visibility: hidden;
-//     -webkit-transform: translate3d(-100%, 0, 0);
-//     transform: translate3d(-100%, 0, 0);
-//   }
-// `;
-
-// const HomePageElm = styled.div`
-//   &.page-enter {
-//     animation: ${slideInLeft} 0.2s forwards;
-//   }
-//   &.page-exit {
-//     animation: ${slideOutLeft} 0.2s forwards;
-//   }
-// `;
-
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
@@ -112,25 +78,20 @@ export default class HomePage extends React.PureComponent {
                 <RoomCTA />
               </HotelRoomContainer>
             </Box>
+
             <Box pl={2} pb={4} width={[6 / 12, 6 / 12, 6 / 12, 9 / 12]}>
               <MapContainer>Map Here</MapContainer>
             </Box>
           </Flex>
-          {/* <ResponsiveImage
+
+          {/* //SRCSet Example
+          <ResponsiveImage
             small="https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_300.jpg"
             medium="https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_768.jpg"
             large="https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_1280.jpg"
             xlarge="https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_3200.jpg"
             alt="Hotel Chancellor"
           /> */}
-
-          {/* <HomePageElm>
-          <h1>HomeElm</h1>
-        </HomePageElm> */}
-
-          {/* <Anime opacity={[0.2, 1]} translateY={[-100, 0]}>
-          <h1>Anime.js Test Works!</h1>
-        </Anime> */}
         </PageContainer>
       </Flex>
     );
