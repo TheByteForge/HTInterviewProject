@@ -5,8 +5,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: ${props => props.theme.fonts.primary};
     -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
   }
 
   body {
@@ -19,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #app {
-    background-color: #fafafa;
+    background-color: ${props => props.theme.colors.primary};
     min-height: 100%;
     min-width: 100%;
   }
@@ -34,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     line-height: 1.5em;
   }
+
 `;
 
 export default GlobalStyle;

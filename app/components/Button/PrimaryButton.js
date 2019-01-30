@@ -6,9 +6,9 @@ const PrimaryButton = styled.button`
   align-items: center;
   width: 100%;
   height: auto;
-  font-family: 'inherit';
-  font-size: 'inherit';
-  font-weight: bold;
+  font-family: 'Gotham', 'HelveticaNeue', 'Helvetica Neue', 'Roboto', Arial,
+    sans-serif;
+  font-size: 0.875rem;
   display: 'inline-block';
   margin: 0;
   background: ${props => props.theme.buttons.primary.backgroundColor};

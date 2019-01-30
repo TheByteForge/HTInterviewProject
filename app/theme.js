@@ -15,7 +15,9 @@ export default {
   colors: {
     primary: '#000',
     secondary: '#454E5F',
+    tertiary: '#2a2b31',
     text: '#fff',
+    price: '#aaaaaa',
   },
   fontSize: {
     xl: '3rem',
@@ -51,5 +53,16 @@ export default {
       backgroundColor: 'transparent',
       boxShadow: 'inset 0 0 0 2px',
     },
+  },
+  tags: {
+    basic: '#628595',
+    solid: '#00606D',
+    lux: '#313154',
+    hip: '#662A5C',
+    highroller: '#FABE3E',
+
+    geo: '#067A24',
+    samedaydeal: '#EC5936',
+    htdeal: '#674C8D',
   },
 };
