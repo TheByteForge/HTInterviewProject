@@ -18,6 +18,7 @@ export default {
     tertiary: '#2a2b31',
     text: '#fff',
     price: '#aaaaaa',
+    overlay: '#e5e8f1',
   },
   fontSize: {
     xl: '3rem',
@@ -32,6 +33,11 @@ export default {
     tracked: '0.1em',
     tight: '-0.05em',
     mega: '0.25em',
+  },
+  lineHeights: {
+    normal: '1.639rem',
+    tight: '2.264rem',
+    large: '2.889rem',
   },
   borders: [
     0,

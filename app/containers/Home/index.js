@@ -14,6 +14,8 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import { Flex, Box } from 'rebass';
 
+import tempMap from '../../images/Maps/google-maps-placeholder.png';
+
 //  Components
 import PageContainer from '../../components/PageContainer/StyledPageContainer';
 import Navigation from '../../components/Navigation';
@@ -38,6 +40,9 @@ const MapContainer = styled.div`
   width: 100%;
   height: 100%;
   background: ${props => props.theme.colors.tertiary};
+  background-image: url(${tempMap});
+  background-position: left center;
+  background-size: cover;
 `;
 
 // import ResponsiveImage from '../../components/Img';
@@ -96,7 +101,7 @@ export default class HomePage extends React.PureComponent {
           </Flex>
 
           <Flex justifyContent="center">
-            <Box pr={2} pb={4} width={[6 / 12, 6 / 12, 4 / 12]}>
+            <Box pr={2} pb={4} width={[6 / 12, 6 / 12, 6 / 12, 3 / 12]}>
               <HotelRoomContainer>
                 <HotelRoomItem />
                 <HotelRoomItem />
@@ -107,7 +112,7 @@ export default class HomePage extends React.PureComponent {
                 <RoomCTA />
               </HotelRoomContainer>
             </Box>
-            <Box pl={2} pb={4} width={[6 / 12, 6 / 12, 8 / 12]}>
+            <Box pl={2} pb={4} width={[6 / 12, 6 / 12, 6 / 12, 9 / 12]}>
               <MapContainer>Map Here</MapContainer>
             </Box>
           </Flex>

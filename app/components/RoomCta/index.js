@@ -6,6 +6,7 @@
 
 import React from 'react';
 // import PropTypes from 'prop-types';
+import { Flex, Box } from 'rebass';
 import styled from 'styled-components';
 
 import { FormattedMessage } from 'react-intl';
@@ -23,6 +24,8 @@ const List = styled.ul`
   font-weight: ${props => props.theme.fontWeights[1]};
   font-size: 0.75rem;
   overflow: hidden;
+  list-style: none;
+  line-height: ${props => props.theme.lineHeights.normal};
 
   li {
     &:hover {
@@ -35,20 +38,46 @@ function RoomCta() {
   return (
     <div>
       <ListTitle>More Amazing Deals In:</ListTitle>
-      <List>
-        <li>
-          <FormattedMessage {...messages.location1} />
-        </li>
-        <li>
-          <FormattedMessage {...messages.location2} />
-        </li>
-        <li>
-          <FormattedMessage {...messages.location3} />
-        </li>
-        <li>
-          <FormattedMessage {...messages.location4} />
-        </li>
-      </List>
+      <Flex flexDirection="row">
+        <Box>
+          <List>
+            <li>
+              <FormattedMessage {...messages.location1} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location2} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location3} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location4} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location5} />
+            </li>
+          </List>
+        </Box>
+        <Box pl={5}>
+          <List>
+            <li>
+              <FormattedMessage {...messages.location6} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location7} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location8} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location9} />
+            </li>
+            <li>
+              <FormattedMessage {...messages.location10} />
+            </li>
+          </List>
+        </Box>
+      </Flex>
     </div>
   );
 }

@@ -22,6 +22,7 @@ import messages from './messages';
 // Component Imports
 import Navigation from '../../components/Navigation';
 import PageContainer from '../../components/PageContainer/StyledPageContainer';
+// import GoogleMaps from '../../components/GoogleMaps';
 
 const slideInRight = keyframes`
   from {
@@ -61,7 +62,7 @@ const AboutPageElm = styled.div`
 export class About extends React.PureComponent {
   render() {
     return (
-      <AboutPageElm>
+      <div>
         <PageContainer>
           <Helmet>
             <title>SignUp | Sign In</title>
@@ -70,10 +71,15 @@ export class About extends React.PureComponent {
               content="Description of Sign Up / Sign In Page"
             />
           </Helmet>
+
           <Navigation />
+
           <FormattedMessage {...messages.header} />
+
+          {/* <GoogleMaps /> */}
         </PageContainer>
-      </AboutPageElm>
+        <AboutPageElm />
+      </div>
     );
   }
 }

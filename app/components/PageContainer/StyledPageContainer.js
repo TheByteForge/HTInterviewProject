@@ -10,7 +10,6 @@ const PageContainer = styled.div`
   height: 100%;
   width: 95vw;
   max-width: 1600px;
-  border: 1px solid red;
   overflow-x: hidden;
   
   /* media-queries */

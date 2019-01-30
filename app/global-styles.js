@@ -28,6 +28,11 @@ const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
   }
+
+  ul{
+    padding: 0;
+    margin: 0;
+  }
   
   p,
   label {
