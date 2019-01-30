@@ -22,6 +22,7 @@ import Navigation from '../../components/Navigation';
 import Title from '../../components/Title';
 import HotelRoomItem from '../../components/HotelRoomItem';
 import RoomCTA from '../../components/RoomCta';
+import GoogleMaps from '../../components/GoogleMaps';
 
 const HotelRoomContainer = styled.div`
   overflow-y: scroll;
@@ -113,7 +114,9 @@ export default class HomePage extends React.PureComponent {
               </HotelRoomContainer>
             </Box>
             <Box pl={2} pb={4} width={[6 / 12, 6 / 12, 6 / 12, 9 / 12]}>
-              <MapContainer>Map Here</MapContainer>
+              <MapContainer>
+                <GoogleMaps />
+              </MapContainer>
             </Box>
           </Flex>
           {/* <ResponsiveImage
