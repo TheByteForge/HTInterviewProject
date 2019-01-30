@@ -33,8 +33,12 @@ const locations2 = [
   <FormattedMessage {...messages.location10} />,
 ];
 
-const locationListCol1 = locations.map(location => <li>{location}</li>);
-const locationListCol2 = locations2.map(location => <li>{location}</li>);
+const locationListCol1 = locations.map((location, index) => (
+  <li key={index}>{location}</li> // eslint-disable-line
+));
+const locationListCol2 = locations2.map((location2, index) => (
+  <li key={index}>{location2}</li> // eslint-disable-line
+));
 
 function RoomCta() {
   return (
