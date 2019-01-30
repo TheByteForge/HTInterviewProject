@@ -1,6 +1,6 @@
 /*
  * HomePage
- *
+ * ---------------------------------------------------------------------
  * This is the first thing users see of our App, at the '/' route
  *
  * NOTE: while this component should technically be a stateless functional
@@ -9,12 +9,8 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 import { Flex, Box } from 'rebass';
-// import { Box, Card, Heading, Text } from 'rebass';
-
-// An image placeholder for google map
-import tempMap from '../../images/Maps/google-maps-placeholder.png';
+// import tempMap from '../../images/Maps/google-maps-placeholder.png';
 
 //  Components
 import PageContainer from '../../components/PageContainer/StyledPageContainer';
@@ -23,30 +19,8 @@ import Title from '../../components/Title';
 import HotelRoomItem from '../../components/HotelRoomItem';
 import RoomCTA from '../../components/RoomCta';
 import GoogleMaps from '../../components/GoogleMaps';
-
-const HotelRoomContainer = styled.div`
-  overflow-y: scroll;
-  max-height: 75vh;
-  width: 100%;
-  ::-webkit-scrollbar {
-    display: none;
-  }
-`;
-
-const MapContainer = styled.div`
-  max-height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: ${props => props.theme.colors.tertiary};
-  background-image: url(${tempMap});
-  background-position: left center;
-  background-size: cover;
-`;
-
-// import ResponsiveImage from '../../components/Img';
+import HotelRoomContainer from './HotelRoomContainer';
+import MapContainer from './MapContainer';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
@@ -55,8 +29,52 @@ export default class HomePage extends React.PureComponent {
       <Flex justifyContent="center">
         <PageContainer>
           <Helmet>
-            <title>Home</title>
+            <title>Hotel Tonight</title>
             <meta name="description" content="Description of Home" />
+            <meta charset="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <meta name="application-name" content="Hotel Tonight App" />
+            <meta name="theme-color" content="#674C8D" />
+
+            <meta name="robots" content="index,follow" />
+            <meta
+              httpEquiv="set-cookie"
+              content="name=value; expires=date; path=url"
+            />
+            {/* Facebook Open Graph */}
+            <meta property="fb:app_id" content="123456789" />
+            <meta property="og:url" content="https://hoteltonight.com" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Hotel Tonight WebApp" />
+            <meta
+              property="og:image"
+              content="https://pbs.twimg.com/profile_images/750819366367666176/P-I61Dec_400x400.jpg"
+            />
+            <meta
+              property="og:description"
+              content="Welcome to Hotel Tonight's Premium Non Existent Web Application by Zack!"
+            />
+            <meta property="og:site_name" content="Hotel Tonight" />
+            <meta property="og:locale" content="en_US" />
+            {/* Twitter Card */}
+            <meta
+              name="twitter:card"
+              content="Welcome to Hotel Tonight's Premium Non Existent Web Application by Zack!"
+            />
+            <meta name="twitter:site" content="@hoteltonight" />
+            <meta name="twitter:url" content="https://hoteltonight.com" />
+            <meta name="twitter:title" content="Hotel Tonight Web App" />
+            <meta
+              name="twitter:description"
+              content="Hotel Tonight Mobile WebApplication"
+            />
+            <meta
+              name="twitter:image"
+              content="https://example.com/image.jpg"
+            />
           </Helmet>
 
           <Navigation />

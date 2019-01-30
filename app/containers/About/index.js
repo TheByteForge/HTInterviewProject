@@ -70,6 +70,11 @@ export class About extends React.PureComponent {
               name="description"
               content="Description of Sign Up / Sign In Page"
             />
+            <meta charset="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
           </Helmet>
 
           <Navigation />

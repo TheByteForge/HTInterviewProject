@@ -10,6 +10,7 @@
  */
 
 import React from 'react';
+import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import Anime from 'react-anime';
 import styled from 'styled-components';
@@ -97,6 +98,12 @@ export default class NotFound extends React.PureComponent {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Page Not Found</title>
+          <meta name="description" content="Error Page Could Not Be Found" />
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Helmet>
         <Navigation />
         <NotFoundContainer>
           <NotFoundTitle>

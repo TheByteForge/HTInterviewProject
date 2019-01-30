@@ -31,6 +31,8 @@ export class StyleGuide extends React.PureComponent {
         <Helmet>
           <title>Style Guide</title>
           <meta name="description" content="Description of Style Guide" />
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Helmet>
         <Navigation />
         <FormattedMessage {...messages.header} />
