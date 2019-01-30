@@ -19,10 +19,11 @@ const StyledRoomItem = styled.div`
   width: 100%;
   height: 100%;
   min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  &:nth-child(n + 2) {
-    margin: 0.25rem;
+  transition: background-color 0.25s ease;
+
+  &:hover {
+    background-color: #43444f;
+    transition: background-color 0.25s ease;
   }
 `;
 
@@ -87,6 +88,7 @@ const LikeBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: -1rem;
 `;
 
 const Distance = styled.h5`
@@ -95,6 +97,7 @@ const Distance = styled.h5`
 `;
 
 const HotelTitle = styled.h1`
+  margin: 0rem;
   font-size: 1.5rem;
   color: ${props => props.theme.colors.text};
   font-weight: ${props => props.theme.fontWeights[5]};
@@ -112,7 +115,7 @@ class HotelRoomItem extends React.Component {
   render() {
     return (
       <Flex>
-        <Box py={2}>
+        <Box mb={2}>
           <StyledRoomItem>
             <TextOverlay>12 People Viewing This Hotel.</TextOverlay>
 

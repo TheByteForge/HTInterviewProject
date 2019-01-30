@@ -13,20 +13,8 @@ export default defineMessages({
     id: `${scope}.default`,
     defaultMessage: 'Default',
   },
-  home: {
-    id: `${scope}.default`,
-    defaultMessage: 'Default',
-  },
   about: {
     id: `${scope}.about`,
     defaultMessage: 'About',
-  },
-  styleguide: {
-    id: `${scope}.styleguide`,
-    defaultMessage: 'StyleGuide',
-  },
-  contact: {
-    id: `${scope}.contact`,
-    defaultMessage: 'Contact',
   },
 });

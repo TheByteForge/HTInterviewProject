@@ -19,10 +19,11 @@ import PageContainer from '../../components/PageContainer/StyledPageContainer';
 import Navigation from '../../components/Navigation';
 import Title from '../../components/Title';
 import HotelRoomItem from '../../components/HotelRoomItem';
+import RoomCTA from '../../components/RoomCta';
 
 const HotelRoomContainer = styled.div`
   overflow-y: scroll;
-  max-height: 60vh;
+  max-height: 75vh;
   width: 100%;
   ::-webkit-scrollbar {
     display: none;
@@ -30,10 +31,13 @@ const HotelRoomContainer = styled.div`
 `;
 
 const MapContainer = styled.div`
-  max-height: 60vh;
+  max-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background: darkgrey;
+  background: ${props => props.theme.colors.tertiary};
 `;
 
 // import ResponsiveImage from '../../components/Img';
@@ -76,36 +80,38 @@ const MapContainer = styled.div`
 export default class HomePage extends React.PureComponent {
   render() {
     return (
-      <PageContainer>
-        <Helmet>
-          <title>Home</title>
-          <meta name="description" content="Description of Home" />
-        </Helmet>
+      <Flex justifyContent="center">
+        <PageContainer>
+          <Helmet>
+            <title>Home</title>
+            <meta name="description" content="Description of Home" />
+          </Helmet>
 
-        <Navigation />
+          <Navigation />
 
-        <Flex>
-          <Box p={4} width={1}>
-            <Title>Top Deals In San Francisco, CA</Title>
-          </Box>
-        </Flex>
+          <Flex>
+            <Box py={2} width={1}>
+              <Title>Top Deals In San Francisco, CA</Title>
+            </Box>
+          </Flex>
 
-        <Flex>
-          <Box pr={2} pl={4} py={4} width={[6 / 12, 6 / 12, 4 / 12]}>
-            <HotelRoomContainer>
-              <HotelRoomItem />
-              <HotelRoomItem />
-              <HotelRoomItem />
-              <HotelRoomItem />
-              <HotelRoomItem />
-              <HotelRoomItem />
-            </HotelRoomContainer>
-          </Box>
-          <Box pr={4} pl={2} py={4} width={[6 / 12, 6 / 12, 8 / 12]}>
-            <MapContainer>Map Here</MapContainer>
-          </Box>
-        </Flex>
-        {/* <ResponsiveImage
+          <Flex justifyContent="center">
+            <Box pr={2} pb={4} width={[6 / 12, 6 / 12, 4 / 12]}>
+              <HotelRoomContainer>
+                <HotelRoomItem />
+                <HotelRoomItem />
+                <HotelRoomItem />
+                <HotelRoomItem />
+                <HotelRoomItem />
+                <HotelRoomItem />
+                <RoomCTA />
+              </HotelRoomContainer>
+            </Box>
+            <Box pl={2} pb={4} width={[6 / 12, 6 / 12, 8 / 12]}>
+              <MapContainer>Map Here</MapContainer>
+            </Box>
+          </Flex>
+          {/* <ResponsiveImage
             small="https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_300.jpg"
             medium="https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_768.jpg"
             large="https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_1280.jpg"
@@ -113,14 +119,15 @@ export default class HomePage extends React.PureComponent {
             alt="Hotel Chancellor"
           /> */}
 
-        {/* <HomePageElm>
+          {/* <HomePageElm>
           <h1>HomeElm</h1>
         </HomePageElm> */}
 
-        {/* <Anime opacity={[0.2, 1]} translateY={[-100, 0]}>
+          {/* <Anime opacity={[0.2, 1]} translateY={[-100, 0]}>
           <h1>Anime.js Test Works!</h1>
         </Anime> */}
-      </PageContainer>
+        </PageContainer>
+      </Flex>
     );
   }
 }

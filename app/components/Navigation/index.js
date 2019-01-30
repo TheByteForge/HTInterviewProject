@@ -14,7 +14,7 @@ import Button from '../Button';
 import Logo from '../Logo';
 
 const NavigationBar = styled.div`
-  height: 15vh;
+  height: 9.174311926605505vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -24,6 +24,7 @@ const NavigationBar = styled.div`
   padding: ${props => props.theme.space};
   border-bottom: #454e5f ${props => props.theme.borders[1]};
   font-weight: ${props => props.theme.fontWeights[1]};
+  white-space: nowrap;
 `;
 
 function Navigation() {
@@ -31,7 +32,7 @@ function Navigation() {
     <div>
       <Flex>
         <NavigationBar>
-          <Box px={4} width={2 / 12}>
+          <Box width={2 / 12}>
             <Logo alt="Hotel Tonight" />
           </Box>
           <Box width={6 / 12} />
