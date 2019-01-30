@@ -6,8 +6,19 @@ const HotelTitle = styled.h1`
   color: ${props => props.theme.colors.text};
   font-weight: ${props => props.theme.fontWeights[5]};
   overflow: hidden;
-  @media only screen and (max-width: 460px) {
-    font-size: 0.5rem;
+  line-height: 2rem;
+
+  @media only screen and (max-width: 670px) {
+    span {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 535px) {
+    span,
+    h1 {
+      font-size: 0.75rem;
+      white-space: nowrap;
+    }
   }
 `;
 

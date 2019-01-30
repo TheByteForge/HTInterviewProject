@@ -10,7 +10,7 @@ import { Flex, Box } from 'rebass';
 import messages from './messages';
 
 // Components
-import hotel1 from '../../images/Hotel-Rooms/hotel-bartlett.jpg';
+
 import Img from '../Img';
 
 // Component Styles
@@ -24,6 +24,9 @@ import LikeBox from './LikeBox';
 import Distance from './Distance';
 import HotelTitle from './HotelTitle';
 import Percentage from './Percentage';
+import hotel1 from '../../images/Hotel-Rooms/hotel-bartlett.jpg';
+// const image = this.props;
+// const imgURL = require(`../../images/Hotel-Rooms/${image}.jpg`);
 
 /* eslint-disable react/prefer-stateless-function */
 class HotelRoomItem extends React.Component {

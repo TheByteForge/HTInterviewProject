@@ -21,8 +21,8 @@ import messages from './messages';
 
 // Component Imports
 import Navigation from '../../components/Navigation';
-import PageContainer from '../../components/PageContainer/StyledPageContainer';
 // import GoogleMaps from '../../components/GoogleMaps';
+import NotFoundPageContainer from '../NotFoundPage/NotFoundContainer';
 
 const slideInRight = keyframes`
   from {
@@ -63,7 +63,7 @@ export class About extends React.PureComponent {
   render() {
     return (
       <div>
-        <PageContainer>
+        <NotFoundPageContainer>
           <Helmet>
             <title>SignUp | Sign In</title>
             <meta
@@ -77,7 +77,7 @@ export class About extends React.PureComponent {
           <FormattedMessage {...messages.header} />
 
           {/* <GoogleMaps /> */}
-        </PageContainer>
+        </NotFoundPageContainer>
         <AboutPageElm />
       </div>
     );

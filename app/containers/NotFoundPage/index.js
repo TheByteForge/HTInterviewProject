@@ -16,6 +16,7 @@ import styled from 'styled-components';
 import messages from './messages';
 
 import Navigation from '../../components/Navigation';
+import NotFoundContainer from './NotFoundContainer';
 
 const NotFoundTitle = styled.div`
   font-size: 1rem;
@@ -31,16 +32,6 @@ const NotFoundTitle = styled.div`
     font-size: 2rem;
     color: ${props => props.theme.tags.basic};
   }
-`;
-
-const NotFoundContainer = styled.div`
-  width: 100vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: ${props => props.theme.colors.primary};
 `;
 
 const Text = styled.div`
