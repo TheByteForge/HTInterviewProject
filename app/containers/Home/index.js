@@ -24,7 +24,6 @@ const HotelRoomContainer = styled.div`
   overflow-y: scroll;
   max-height: 60vh;
   width: 100%;
-
   ::-webkit-scrollbar {
     display: none;
   }
@@ -92,7 +91,7 @@ export default class HomePage extends React.PureComponent {
         </Flex>
 
         <Flex>
-          <Box p={4} width={[6 / 12, 4 / 12]}>
+          <Box pr={2} pl={4} py={4} width={[6 / 12, 6 / 12, 4 / 12]}>
             <HotelRoomContainer>
               <HotelRoomItem />
               <HotelRoomItem />
@@ -102,7 +101,7 @@ export default class HomePage extends React.PureComponent {
               <HotelRoomItem />
             </HotelRoomContainer>
           </Box>
-          <Box p={4} width={[6 / 12, 8 / 12]}>
+          <Box pr={4} pl={2} py={4} width={[6 / 12, 6 / 12, 8 / 12]}>
             <MapContainer>Map Here</MapContainer>
           </Box>
         </Flex>

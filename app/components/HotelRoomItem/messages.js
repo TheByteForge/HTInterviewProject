@@ -9,8 +9,8 @@ import { defineMessages } from 'react-intl';
 export const scope = 'app.components.HotelRoomItem';
 
 export default defineMessages({
-  header: {
-    id: `${scope}.header`,
-    defaultMessage: 'This is the HotelRoomItem component!',
+  hotelMessage: {
+    id: `${scope}.hotel.message`,
+    defaultMessage: `{hotel}`,
   },
 });

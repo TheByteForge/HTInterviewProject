@@ -18,11 +18,12 @@ const NavigationBar = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: ${props => props.theme.colors.primary};
   padding: ${props => props.theme.space};
   border-bottom: #454e5f ${props => props.theme.borders[1]};
+  font-weight: ${props => props.theme.fontWeights[1]};
 `;
 
 function Navigation() {
@@ -30,12 +31,12 @@ function Navigation() {
     <div>
       <Flex>
         <NavigationBar>
-          <Box width={2 / 12}>
+          <Box px={4} width={2 / 12}>
             <Logo alt="Hotel Tonight" />
           </Box>
           <Box width={6 / 12} />
           <Box width={2 / 12}>
-            <Button label="SignUp | Sign In" link="/about" prefetch />
+            <Button label="Sign Up | Sign In" link="/about" prefetch />
           </Box>
         </NavigationBar>
       </Flex>
