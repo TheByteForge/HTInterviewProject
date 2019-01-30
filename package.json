@@ -83,6 +83,7 @@
     "react-anime": "^2.2.0",
     "react-content-loader": "^3.4.2",
     "react-dom": "16.6.0",
+    "react-dropdown-input": "^0.1.11",
     "react-ga": "^2.5.6",
     "react-helmet": "5.2.0",
     "react-intl": "2.7.2",
